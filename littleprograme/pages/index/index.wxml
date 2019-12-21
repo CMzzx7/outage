@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="viewBtn">
+      <button type='primary' bindtap="powerOn">接通电源</button>
+      <button type='warn' bindtap="powerOff">关闭电源</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">当前状态：{{flag}}</text>
+  </view>
+</view>

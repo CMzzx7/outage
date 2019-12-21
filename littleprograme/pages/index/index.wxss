@@ -1,0 +1,56 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 30px;
+}
+
+.viewBtn{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.wrapBtn{
+    display: flex;
+  display: -webkit-flex;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items:center;
+  margin: 0 calc( (100% - 240rpx * 2) / 3 );
+  margin-bottom: 20px;
+  padding: 50rpx 0 38rpx 0;
+}
+
+.Btn { 
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  align-items: center;
+  -webkit-align-items: center;
+  width: 240rpx;
+  box-sizing: border-box;
+}
